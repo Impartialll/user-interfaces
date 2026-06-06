@@ -1,16 +1,16 @@
 ## Результати виконання
 
 #### Головне меню
-![image](Results/res1.png)
+![image](Results/rez1.png)
 
 #### Завдання 1
-![image](Results/res2.png)
-![image](Results/res3.png)
+![image](Results/rez2.png)
+![image](Results/rez3.png)
 #### Завдання 2
-![image](Results/res4.png)
+![image](Results/rez4.png)
 #### Завдання 3
-![image](Results/res5.png)
+![image](Results/rez5.png)
 #### Завдання 4
-![image](Results/res6.png)
+![image](Results/rez6.png)
 #### Завдання 5
-![image](Results/res7.png) 
+![image](Results/rez7.png) 
