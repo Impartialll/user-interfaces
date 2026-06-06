@@ -1,0 +1,28 @@
+﻿<Window x:Class="INDZ.Task5Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Завдання 5" Height="400" Width="600" Loaded="Window_Loaded" Closing="Window_Closing">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0">
+            <MenuItem Header="File">
+                <MenuItem Header="Open..." Click="MenuOpen_Click"/>
+                <MenuItem x:Name="menuClose" Header="Close" Click="MenuClose_Click"/>
+                <MenuItem Header="Exit" Click="MenuExit_Click"/>
+            </MenuItem>
+        </Menu>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200" x:Name="colList"/>
+                <ColumnDefinition Width="5"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <ListBox x:Name="lstFiles" Grid.Column="0" SelectionChanged="LstFiles_SelectionChanged" IsTabStop="True" TabIndex="0"/>
+            <GridSplitter Grid.Column="1" HorizontalAlignment="Stretch"/>
+            <TextBox x:Name="txtEditor" Grid.Column="2" AcceptsReturn="True" TextWrapping="Wrap" IsTabStop="True" TabIndex="1"/>
+        </Grid>
+    </Grid>
+</Window>

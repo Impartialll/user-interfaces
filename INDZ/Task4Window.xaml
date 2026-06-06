@@ -1,0 +1,24 @@
+﻿<Window x:Class="INDZ.Task4Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Завдання 4" Height="450" Width="600" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+
+        <Canvas x:Name="GameCanvas" Grid.Column="0" Background="#EEE" AllowDrop="True" Drop="GameCanvas_Drop"/>
+        <StackPanel Grid.Column="1" Margin="10">
+            <Button x:Name="btnStart" Content="Старт" Height="30" Click="BtnStart_Click"/>
+            <TextBlock Text="Точність"/>
+            <TextBox x:Name="txtPrecision" IsReadOnly="True" Text="0"/>
+            <TextBlock Text="Час"/>
+            <TextBox x:Name="txtTime" IsReadOnly="True" Text="0"/>
+            <TextBlock Text="Результат"/>
+            <TextBox x:Name="txtResult" IsReadOnly="True" Text="0"/>
+            <TextBlock Text="5 кращих результатів" Margin="0,15,0,0" FontWeight="Bold"/>
+            <ListBox x:Name="lstTop5" Height="150"/>
+        </StackPanel>
+    </Grid>
+</Window>

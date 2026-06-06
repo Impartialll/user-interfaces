@@ -1,0 +1,10 @@
+﻿<Window x:Class="INDZ.Task1Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Завдання 1" Height="250" Width="350" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Canvas>
+        <Button Content="Підкинути монету" Canvas.Left="100" Canvas.Top="40" Width="150" Height="35" Click="BtnToss_Click"/>
+        <TextBlock x:Name="tbTotal" Text="Сумарне число підкидань = 0" Canvas.Left="40" Canvas.Top="100"/>
+        <TextBlock x:Name="tbPercent" Text="Відсоток орлів = 0%" Canvas.Left="40" Canvas.Top="140"/>
+    </Canvas>
+</Window>
