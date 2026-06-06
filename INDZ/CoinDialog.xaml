@@ -1,0 +1,26 @@
+﻿<Window x:Class="INDZ.CoinDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Налаштування підкидання" Height="150" Width="320"
+        ResizeMode="NoResize" WindowStyle="ToolWindow" 
+        WindowStartupLocation="CenterOwner" Loaded="Window_Loaded">
+
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Введіть кількість підкидань:" Grid.Row="0" Margin="0,0,0,5"/>
+        <TextBox x:Name="txtTosses" Grid.Row="1" Height="25" VerticalAlignment="Top"/>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button x:Name="btnOk" Content="ОК" Width="70" Margin="0,0,10,0" IsDefault="True" Click="BtnOk_Click"/>
+
+            <Button x:Name="btnApply" Content="Застосувати" Width="80" Margin="0,0,10,0" Click="BtnApply_Click"/>
+
+            <Button x:Name="btnCancel" Content="Відміна" Width="70" IsCancel="True"/>
+        </StackPanel>
+    </Grid>
+</Window>
